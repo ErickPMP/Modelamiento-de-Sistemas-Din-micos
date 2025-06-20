@@ -39,7 +39,7 @@ void loop(){
   else if (t>80.0 && t<=90.0){SPo=0.0;}
   else if (t>90.0){SPo=640.0;}
   */
-
+/*
   if (t<=10.0){SPo=512.0;}
   else if (t>10.0 && t<=20.0){SPo=640.0;}
   else if (t>20.0 && t<=30.0){SPo=512.0;}
@@ -58,7 +58,19 @@ void loop(){
   else if (t>150.0 && t<=160.0){SPo=0.0;}
   else if (t>160.0 && t<=170.0){SPo=512.0;}
   else if (t>170.0){SPo=640.0;}
+*/
+  if (t<=10.0){SPo=512.0;}
+  else if (t>10.0 && t<=20.0){SPo=544.0;}
+  else if (t>20.0 && t<=30.0){SPo=480.0;}
+  else if (t>30.0 && t<=40.0){SPo=576.0;}
+  else if (t>40.0 && t<=50.0){SPo=448.0;}
+  else if (t>50.0 && t<=60.0){SPo=608.0;}
+  else if (t>60.0 && t<=70.0){SPo=416.0;}
+  else if (t>70.0 && t<=80.0){SPo=640.0;}
+  else if (t>80.0 && t<=90.0){SPo=384.0;}
+  else if (t>90.0){SPo=640.0;}
 
+  
   timeNow = micros();
     if (timeNow - timeOld2 >= Ts){
         timeOld2 = timeNow;
